@@ -55,6 +55,9 @@ def _interleaved_present_and_missing(seq):
             result.append((present.end() + 1, upcoming.start() - 1))
     return result
 
+def _max_sub_seq_count_width(seq):
+    sub_seqs = seq.split()
+    return max([len(f"{1 + s.end() - s.start()}") for s in sub_seqs])
 
 class FramesTool(object):
 
@@ -111,6 +114,7 @@ class FramesTool(object):
             return
         # and now, what you've all been waiting for
         max_zfill = max([seq.zfill() for seq in self._image_essence_sequences])
+        max_subseq_count_width = max([_max_sub_seq_count_width(s) for s in self._image_essence_sequences])
         for seq in self._image_essence_sequences:
             present = True
             sub_seqs = _interleaved_present_and_missing(seq)
@@ -119,13 +123,19 @@ class FramesTool(object):
             for sub_seq in sub_seqs:
                 if (present and self.include_sequences) or (not present and self.include_missing):
                     sub_seq_frames = self._sub_seq_frame_desc(sub_seq, present, max_zfill)
+                    sub_seq_count = f"{1 + sub_seq[1] - sub_seq[0]}"
+                    sub_seq_count_width = len(sub_seq_count)
+                    sub_seq_count_leading_pad = f"{' '*(max_subseq_count_width - sub_seq_count_width)}"
+                    count = f"{sub_seq_count_leading_pad}({sub_seq_count}) "
                     seq_desc = seq_in_nuke_style if is_first_sub_seq else f'{" "*(len(seq_in_nuke_style)//2)}"'
-                    print(f"{sub_seq_frames} {seq_desc}")
+                    print(f"{sub_seq_frames} {count}{seq_desc}")
                 present = not present
                 is_first_sub_seq = False
         if self.include_debris:
             for thing in self._debris:
-                print(f"{' '*(max_zfill + 1 + max_zfill)} {BlenderColors.WARNING}{thing}{BlenderColors.ENDC}")
+                frame_range_padding = f"{' '*(max_zfill + 1 + max_zfill)}"
+                count_padding = f"{' '*(1 + 1 + max_subseq_count_width + 1)}"
+                print(f"{frame_range_padding}{count_padding} {BlenderColors.WARNING}{thing}{BlenderColors.ENDC}")
 
 
 if __name__ == '__main__':
