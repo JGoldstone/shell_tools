@@ -32,7 +32,7 @@ class BlenderColors:
 
 
 FRAMES_VERSION = 0.1
-KNOWN_IMAGE_ESSENCE_CONTAINERS = ('.mov', '.mxf', '.ari', '.dpx', '.exr')
+KNOWN_IMAGE_ESSENCE_CONTAINERS = ('.mov', '.mxf', '.ari', '.dpx', '.exr', 'tif', 'tiff', 'png')
 
 
 def _print_maybe_with_sequence_first(one_of_many, seq_string, thing):
