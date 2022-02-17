@@ -1,0 +1,32 @@
+[[package]]
+name = "fileseq"
+version = "1.14.0"
+description = "A Python library for parsing frame ranges and file sequences commonly used in VFX and Animation applications."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+future = "*"
+
+[[package]]
+name = "future"
+version = "0.18.2"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "581d69f7c7679da10d58f3aae76ac089d655ebabd45ddbe8d8bd08d068480c82"
+
+[metadata.files]
+fileseq = [
+    {file = "Fileseq-1.14.0-py3-none-any.whl", hash = "sha256:70a4a2f833e3e571babc9273c5e74a6898e30ad4db7721fd8e8390f8da148b73"},
+    {file = "Fileseq-1.14.0.tar.gz", hash = "sha256:606d7646e2b212b9c5398beaec1b371a914379ccb1ac73c6e2340c21bcb5cc55"},
+]
+future = [
+    {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
+]
