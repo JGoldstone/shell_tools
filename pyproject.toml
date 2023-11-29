@@ -21,6 +21,6 @@ fileseq = "*"
 [tool.poetry.urls]
 
 [build-system]
-requires = ["poetry>=0.12"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.masonry.api"
 
