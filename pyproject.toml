@@ -1,18 +1,20 @@
 [project]
 name = "shell_tools"
 version = "0.2.0"
+requires-python = ">=3.13"
 description = "environment for python-based shell tools"
+license = { text = "MIT" }
 authors = [{ name= "Joseph Goldstone", email =  "joseph.goldstone@mac.com" }]
 maintainers = [{ name = "Joseph Goldstone", email = "joseph.goldstone@mac.com" }]
-license = { text = "MIT" }
 readme = "README.md"
 keywords = [
     "pipeline",
-    "content management", "CMS"
+    "content management",
+    "CMS"
 ]
+
 dependencies = [
-    python = "^3.9"
-    fileseq = "*"
+    "fileseq" = "*"
 ]
 
 [build-system]
