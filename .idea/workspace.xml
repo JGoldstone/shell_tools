@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a91534-00e4-4956-961a-15f3cf3a0d98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shell_tools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_frame_sequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shell_tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shell_tools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frames.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shell_tools/frames.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-    </list>
+    <list default="true" id="50a91534-00e4-4956-961a-15f3cf3a0d98" name="Changes" comment="Rewrite for more testable modularity" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,14 +114,27 @@
       <updated>1747938440736</updated>
       <workItem from="1747938441749" duration="6816000" />
       <workItem from="1748845853372" duration="56616000" />
-      <workItem from="1749394394298" duration="4349000" />
+      <workItem from="1749394394298" duration="4871000" />
     </task>
+    <task id="LOCAL-00001" summary="Rewrite for more testable modularity">
+      <option name="closed" value="true" />
+      <created>1749399269151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749399269151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rewrite for more testable modularity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewrite for more testable modularity" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/shell_tools$frames.coverage" NAME="frames Coverage Results" MODIFIED="1749397619945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/shell_tools" />
+    <SUITE FILE_PATH="coverage/shell_tools$frames.coverage" NAME="frames Coverage Results" MODIFIED="1749399233106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/shell_tools" />
   </component>
 </project>

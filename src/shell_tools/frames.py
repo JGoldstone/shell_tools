@@ -104,7 +104,7 @@ class SequencedFrames(Content):
         start_color: str = BlenderColors.OKGREEN if self.variant == SequenceVariant.RUN else BlenderColors.FAIL
         end_color: str = BlenderColors.ENDC
         return (f"{start:>{start_width}}-{end:<{end_width}}"
-                f" |{1 + end - start:>{count_width}}:"
+                f"| {1 + end - start:<{count_width}} "
                 f"{start_color}"
                 f"{self.nuke_format_spec(end_width-1)}"
                 f"{end_color}")
