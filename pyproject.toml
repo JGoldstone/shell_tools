@@ -14,7 +14,7 @@ keywords = [
 ]
 
 dependencies = [
-    "fileseq" = "*"
+    "fileseq >= 2.1.2"
 ]
 
 [build-system]

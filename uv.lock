@@ -1,0 +1,23 @@
+version = 1
+revision = 2
+requires-python = ">=3.13"
+
+[[package]]
+name = "fileseq"
+version = "2.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c0/0c/287ea1dc397c8c0b66d58d205e97751a365f79af47f7678d4c06ae4fdb6a/fileseq-2.1.2.tar.gz", hash = "sha256:f1d844d62ad017821d0188110d36f3b93ae9996782f0e890cb64419644e469f2", size = 58557, upload-time = "2024-10-31T20:30:38.595Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e0/0a/84f2f7799ff6f4a2c6386f5465c6a3c469f1446aa3ba92f311a5f5db2230/Fileseq-2.1.2-py3-none-any.whl", hash = "sha256:b5d599b0bff72f0b82d31a465b3f6b28ef4d20fa097bb7ff4d1a047efe913932", size = 35351, upload-time = "2024-10-31T20:30:36.561Z" },
+]
+
+[[package]]
+name = "shell-tools"
+version = "0.2.0"
+source = { editable = "." }
+dependencies = [
+    { name = "fileseq" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "fileseq", specifier = ">=2.1.2" }]
