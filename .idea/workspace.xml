@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a91534-00e4-4956-961a-15f3cf3a0d98" name="Changes" comment="Rewrite for more testable modularity" />
+    <list default="true" id="50a91534-00e4-4956-961a-15f3cf3a0d98" name="Changes" comment="Tweak justification for readability">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +116,7 @@
       <updated>1747938440736</updated>
       <workItem from="1747938441749" duration="6816000" />
       <workItem from="1748845853372" duration="56616000" />
-      <workItem from="1749394394298" duration="4871000" />
+      <workItem from="1749394394298" duration="7234000" />
     </task>
     <task id="LOCAL-00001" summary="Rewrite for more testable modularity">
       <option name="closed" value="true" />
@@ -124,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749399269151</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tweak justification for readability">
+      <option name="closed" value="true" />
+      <created>1749399594483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749399594483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,9 +142,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rewrite for more testable modularity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rewrite for more testable modularity" />
+    <MESSAGE value="Tweak justification for readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweak justification for readability" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/shell_tools$frames.coverage" NAME="frames Coverage Results" MODIFIED="1749399233106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/shell_tools" />
+    <SUITE FILE_PATH="coverage/shell_tools$frames.coverage" NAME="frames Coverage Results" MODIFIED="1749399559022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/shell_tools" />
   </component>
 </project>
