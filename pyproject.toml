@@ -17,6 +17,9 @@ dependencies = [
     "fileseq >= 2.1.2"
 ]
 
+[project.scripts]
+my-script = "shell_tools.frames:function"
+
 [build-system]
 requires = ["scikit-build-core"]
 build-backend = "scikit_build_core.build"
