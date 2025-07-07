@@ -2,7 +2,7 @@
 from sys import argv, stderr
 import argparse
 
-from .frames import FRAMES_VERSION, FramesTool
+from shell_tools.frames import FRAMES_VERSION, FramesTool
 
 def frames_cmd_top_level():
     tool = FramesTool()
