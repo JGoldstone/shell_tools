@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.scripts]
-my-script = "shell_tools.frames:function"
+frames = "shell_tools.top_level_functions:frames_cmd_top_level"
 
 [build-system]
 requires = ["scikit-build-core"]
